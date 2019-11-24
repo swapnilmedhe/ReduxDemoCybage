@@ -7,10 +7,13 @@ export class Post extends Component {
             <div>
                 <h2> Title :{this.props.post.title}</h2>
                 <h2> Post  :{this.props.post.message}</h2>
-                <button>Edit</button>
+                <button onClick={
+                    () => this.props.dispatch({ type: 'EDIT_POST' ,id: this.props.post.id})
+                }>Edit Post</button>
+
                 <button onClick={
                     () => this.props.dispatch({ type:'DELETE_POST' ,id: this.props.post.id})
-                }>Delete</button>
+                }>Delete Post</button>
             </div>
         )
     }
