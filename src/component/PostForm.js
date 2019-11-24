@@ -24,12 +24,13 @@ import {connect} from 'react-redux';
    
     render() {
         return (
-            <div>
-                <h3>Creating Post ....</h3>
-                <form onSubmit={this.handleSubmit}>
-                    <input required type='text' placeholder='Enter post title  ' ref={(input)=>this.getTitle = input}  /> <br/><br/>
-                    <textarea required rows="5" cols="28" placeholder="Enter Post" ref={(input)=>this.getMessage = input} /><br /><br />
-   <                button>Post</button>
+            <div className="post-container" >
+                <h3 style={{color: 'green' }}>Create Post </h3>
+                <form className="form" onSubmit={this.handleSubmit}>
+                 <input required type='text' placeholder='Enter post title  ' ref={(input)=>this.getTitle = input}  /> <br/><br/>
+                 <textarea required rows="5" cols="28" placeholder="Enter Post" ref={(input)=>this.getMessage = input} /><br /><br />
+
+                    <button className="edit"> Post</button>
                 </form>
             </div>
         )

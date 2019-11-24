@@ -19,13 +19,13 @@ handleEdit = (e) =>{
     render() {
         return (
             <div>
-                <form onSubmit={this.handleEdit}>
+                <form  className="form" onSubmit={this.handleEdit}>
                     <input required type='text' placeholder='edit post here ....' ref={(input) => this.getTitle= input}
                     defaultValue ={this.props.post.title}/> <br/><br/>
-                    <textarea required rows="5" ref={(input) => this.getMessage = input} placeholder='Enter Message'
+                    <textarea  required rows="5" ref={(input) => this.getMessage = input} placeholder='Enter Message'
                     defaultValue={this.props.post.message} cols='28' /><br/><br/>
  
-                    <button>Update Post</button>>
+                    <button className="edit">Update Post</button>
                 </form>
             </div>
         )

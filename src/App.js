@@ -1,16 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import PostForm from './component/PostForm';
 import AllPost from './component/AllPost';
-import UpdatePost from './component/EditPost';
+
 function App() {
   return (
+   
     <div className="App">
+      <div className="navbar">
+        <h2 className="center"> Post It  </h2>
+      </div>
       <PostForm/>
         <AllPost/>
       
     </div>
+  
   );
 }
 

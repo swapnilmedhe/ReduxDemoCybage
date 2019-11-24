@@ -7,8 +7,7 @@ class AllPost extends Component {
     render() {
         return (
             <div>
-                <h4> All Post component ...</h4>
-                
+                <h4 className='all_post_heading'> All Posts ></h4>
                 {/* {console.log(this.props.posts)} */}
                { this.props.posts.map( (post) => 
                <div key ={post.id}> 
